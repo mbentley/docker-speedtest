@@ -11,4 +11,5 @@ RUN apt-get update &&\
   apt-get autoremove -y &&\
   rm -rf /var/lib/apt/lists/*
 
-CMD ["SpeedTest"]
+ENTRYPOINT ["SpeedTest"]
+CMD ["--share"]
